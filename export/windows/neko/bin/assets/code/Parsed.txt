@@ -1,3 +1,0 @@
-"Bonjour le monde" println
-"Ceci est une tres grande chaine de caracteres alors je la coupe en morceau" println
-"Et ceci n'en fait pas partie" prntln
