@@ -4,18 +4,21 @@ using StringTools;
 class CodeManager 
 {
 	private var parsedCode:Array<TypeBase>;
+	private var bruteCode:String;
 	private var clearCode:String;
+	private var lines:Array<String>;
 	
 
 	public function new(texte) 
 	{
-		this.parseFirst(texte);
+		bruteCode = texte;
+		this.firstParse();
 	}
 	
-	private function parseFirst(texte)
+	private function firstParse()
 	{
-		var liste = texte.split("\n");
-		var compteur = liste.length -1;
+		var liste = bruteCode.split("\n");
+		var compteur = (liste.length -1);
 		while (compteur > 0)
 		{
 			var x = liste[compteur];
@@ -26,7 +29,13 @@ class CodeManager
 			}
 			compteur -= 1;
 		}
-		clearCode = liste.map(function(x){return x.trim(); }).join("\n");
+		lines = liste.map(function(x){return x.trim(); });
+		clearCode = lines.join("\n");
+	}
+	
+	private function secondParse()
+	{
+		
 	}
 	
 	public function to_string()
