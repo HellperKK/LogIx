@@ -2,9 +2,9 @@ package;
 
 /**
  * ...
- * @author ...
+ * @author 
  */
-class TypeBase 
+class NativeFunction 
 {
 
 	public function new() 

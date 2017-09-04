@@ -3,7 +3,7 @@ using StringTools;
 
 class CodeManager 
 {
-	private var parsedCode:Array<TypeBase>;
+	//private var parsedCode:Array<TypeBase>;
 	private var bruteCode:String;
 	private var clearCode:String;
 	private var lines:Array<String>;

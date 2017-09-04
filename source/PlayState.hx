@@ -28,4 +28,9 @@ class PlayState extends FlxState
 		
 	}
 	
+	public static function init()
+	{
+		
+	}
+	
 }
